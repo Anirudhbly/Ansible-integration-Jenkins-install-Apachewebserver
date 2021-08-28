@@ -1,2 +1,2 @@
 [webservers]
-10.128.0.5 ansible_user=anirudhbly
+10.128.0.5 ansible_user=jenkins
