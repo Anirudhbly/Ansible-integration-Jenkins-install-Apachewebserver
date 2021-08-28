@@ -1,6 +1,7 @@
 ---
 - hosts: webservers 
-    tasks:
+    become: True
+    tasks: 
     - name: Install packages
       yum:
         name: "httpd"
