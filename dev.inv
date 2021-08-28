@@ -1,4 +1,4 @@
 [webservers]
-localhost ansible_user=root
+localhost
 34.132.249.97 ansible_user=jenkins
 10.128.0.5 ansible_user=jenkins
