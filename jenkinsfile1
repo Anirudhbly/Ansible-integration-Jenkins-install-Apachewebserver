@@ -10,7 +10,7 @@ pipeline {
         
         stage('Execute Ansible Playbook') { 
             steps {
-                ansiblePlaybook installation: 'Ansible', playbook: 'maven_build.yml'                
+                ansiblePlaybook installation: 'Ansible', inventory: 'dev.inv', playbook: 'maven_build.yml'                
                 }
             }
         }
