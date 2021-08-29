@@ -1,1 +1,17 @@
-
+pipeline { 
+    agent any 
+    stages {
+        
+        stage('Git Project checkout') {
+        steps {
+               git branch: 'master', url: 'https://github.com/Anirudhbly/Ansible-integration-Jenkins-install-Apachewebserver.git'  
+          }
+        }
+        
+        stage('Execute Ansible Playbook') { 
+            steps {
+                ansiblePlaybook installation: 'Ansible', playbook: 'maven_build.yml'                
+                }
+            }
+        }
+}
