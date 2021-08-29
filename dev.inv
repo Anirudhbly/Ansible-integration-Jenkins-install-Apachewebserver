@@ -1,3 +1,2 @@
 [webservers]
-localhost  ansible_user=jenkins
 10.128.0.5 ansible_user=jenkins
